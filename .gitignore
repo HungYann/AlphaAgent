@@ -143,6 +143,9 @@ agent_config.json
 # Frontend build output
 /service/frontend/dist/
 
+# Landing page dependencies (built output in /docs/ is committed for GitHub Pages)
+/landing/node_modules/
+
 # Python cache
 /scripts/__pycache__/
 /service/server/__pycache__/
