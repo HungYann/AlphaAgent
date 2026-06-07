@@ -9,7 +9,7 @@ A fully local AI trading dashboard that runs 24/7 on your own machine. Supports 
 [![GitHub forks](https://img.shields.io/github/forks/HungYann/AlphaAgent?style=social)](https://github.com/HungYann/AlphaAgent/fork)
 [![Landing Page](https://img.shields.io/badge/Landing-Page-af7830?style=flat&logo=github)](https://hungyann.github.io/AlphaAgent/)
 [![xapi.to](https://img.shields.io/badge/API_Keys-xapi.to-blue?style=flat)](https://www.xapi.to/console?loginMethod=twitter&tab=keys)
-[![Trendshift](https://trendshift.io/api/badge/repositories/15607)](https://trendshift.io/repositories/15607)
+
 
 ---
 
