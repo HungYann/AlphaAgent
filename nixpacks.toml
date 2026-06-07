@@ -1,0 +1,17 @@
+[phases.setup]
+nixPkgs = ["nodejs_20", "python311"]
+
+[phases.install]
+cmds = [
+  "pip install -r service/requirements.txt",
+  "pip install 'pydantic[email]'",
+  "cd service/frontend && npm install"
+]
+
+[phases.build]
+cmds = [
+  "cd service/frontend && npm run build"
+]
+
+[start]
+cmd = "cd service/server && python3 main.py"
