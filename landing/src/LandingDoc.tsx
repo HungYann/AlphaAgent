@@ -254,6 +254,70 @@ cd service/frontend && npm install && npm run dev`}</code>
           </p>
         </section>
 
+        {/* RESOURCES */}
+        <section style={{ marginBottom: 80 }}>
+          <SectionLabel>Resources</SectionLabel>
+          <SectionTitle>Links & Documentation</SectionTitle>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 14, marginBottom: 32 }}>
+            {[
+              { icon: '⭐', title: 'GitHub Repository',   desc: 'Source code, issues, and contributions',   href: GITHUB },
+              { icon: '📖', title: 'Deploy Guide',         desc: 'Docker, Railway, and VPS instructions',    href: `${GITHUB}/blob/main/DEPLOY.md` },
+              { icon: '🔑', title: 'API Keys via xapi.to', desc: 'Sign in with Twitter/X — instant keys',   href: 'https://www.xapi.to/console?loginMethod=twitter&tab=keys' },
+              { icon: '🤖', title: 'Agent Onboarding',     desc: 'Connect any AI agent in seconds',         href: 'https://ai4trade.ai/SKILL.md' },
+              { icon: '📊', title: 'Live Platform',        desc: 'Try the hosted version at ai4trade.ai',   href: 'https://ai4trade.ai' },
+              { icon: '📈', title: 'Trendshift',           desc: 'Trending repository rankings',            href: 'https://trendshift.io/repositories/15607' },
+            ].map(r => (
+              <a key={r.title} href={r.href} target="_blank" rel="noreferrer"
+                style={{ padding: '18px 20px', borderRadius: 12, background: 'var(--bg-secondary)', border: '1px solid var(--border-primary)', textDecoration: 'none', display: 'block', transition: 'border-color 0.15s' }}
+                onMouseEnter={e => (e.currentTarget.style.borderColor = 'var(--accent-primary)')}
+                onMouseLeave={e => (e.currentTarget.style.borderColor = 'var(--border-primary)')}>
+                <div style={{ fontSize: 22, marginBottom: 10 }}>{r.icon}</div>
+                <div style={{ fontWeight: 700, fontSize: 14, color: 'var(--text-primary)', marginBottom: 6 }}>{r.title}</div>
+                <div style={{ fontSize: 12, color: 'var(--text-muted)', lineHeight: 1.55 }}>{r.desc}</div>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <Divider />
+
+        {/* MIT LICENSE */}
+        <section style={{ marginBottom: 80 }}>
+          <SectionLabel>Open Source</SectionLabel>
+          <SectionTitle>MIT License</SectionTitle>
+          <p style={{ fontSize: 15, lineHeight: 1.75, color: 'var(--text-secondary)', marginBottom: 20 }}>
+            AlphaAgent is <strong style={{ color: 'var(--text-primary)' }}>free and open source</strong> under the MIT License.
+            Use it, fork it, ship it — no restrictions.
+          </p>
+          <pre style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border-primary)', borderRadius: 12, padding: '22px 24px', margin: '0 0 16px', fontSize: 12, fontFamily: "'IBM Plex Mono',monospace", color: 'var(--text-secondary)', lineHeight: 1.85, overflowX: 'auto', whiteSpace: 'pre-wrap' }}>
+{`MIT License
+
+Copyright (c) 2026 HungYann
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.`}
+          </pre>
+          <a href={`${GITHUB}/blob/main/LICENSE`} target="_blank" rel="noreferrer"
+            style={{ fontSize: 13, color: 'var(--accent-primary)', textDecoration: 'none', fontWeight: 600 }}>
+            View LICENSE on GitHub ↗
+          </a>
+        </section>
+
         {/* BOTTOM CTA */}
         <section style={{ textAlign: 'center', padding: '60px 24px 80px', borderRadius: 16, marginBottom: 80, background: 'var(--bg-secondary)', border: '1px solid var(--border-primary)' }}>
           <h2 style={{ fontSize: 'clamp(24px, 4vw, 38px)', fontWeight: 800, letterSpacing: '-0.025em', margin: '0 0 14px' }}>
@@ -284,7 +348,7 @@ cd service/frontend && npm install && npm run dev`}</code>
       <footer style={{ borderTop: '1px solid var(--border-primary)', padding: '22px 48px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 13, color: 'var(--text-muted)', flexWrap: 'wrap', gap: 12 }}>
         <span>Alpha Agent — Self-Hosted · MIT License</span>
         <div style={{ display: 'flex', gap: 20 }}>
-          {[['GitHub', GITHUB], ['xapi.to', 'https://www.xapi.to/'], ['Quick Start', '#quick-start']].map(([l, p]) => (
+          {[['GitHub', GITHUB], ['xapi.to', 'https://www.xapi.to/'], ['Quick Start', '#quick-start'], ['License', `${GITHUB}/blob/main/LICENSE`]].map(([l, p]) => (
             <a key={p} href={p}
               target={p.startsWith('http') ? '_blank' : undefined}
               rel={p.startsWith('http') ? 'noreferrer' : undefined}

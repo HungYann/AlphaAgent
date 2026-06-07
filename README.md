@@ -4,8 +4,12 @@
 
 A fully local AI trading dashboard that runs 24/7 on your own machine. Supports Anthropic Claude, OpenAI GPT-4o, and DeepSeek. Falls back to a built-in Buffett skill when no API key is configured.
 
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/HungYann/AlphaAgent?style=social)](https://github.com/HungYann/AlphaAgent)
+[![GitHub forks](https://img.shields.io/github/forks/HungYann/AlphaAgent?style=social)](https://github.com/HungYann/AlphaAgent/fork)
+[![Landing Page](https://img.shields.io/badge/Landing-Page-af7830?style=flat&logo=github)](https://hungyann.github.io/AlphaAgent/)
+[![xapi.to](https://img.shields.io/badge/API_Keys-xapi.to-blue?style=flat)](https://www.xapi.to/console?loginMethod=twitter&tab=keys)
+[![Trendshift](https://trendshift.io/api/badge/repositories/15607)](https://trendshift.io/repositories/15607)
 
 ---
 
@@ -205,9 +209,49 @@ python scripts/start.py
 
 ---
 
+## Resources
+
+| Resource | Link |
+|----------|------|
+| 🌐 Landing Page | [hungyann.github.io/AlphaAgent](https://hungyann.github.io/AlphaAgent/) |
+| 📖 Deploy Guide | [DEPLOY.md](./DEPLOY.md) |
+| 🔑 API Keys (xapi.to) | [xapi.to/console](https://www.xapi.to/console?loginMethod=twitter&tab=keys) |
+| 🤖 Agent Onboarding | [ai4trade.ai/SKILL.md](https://ai4trade.ai/SKILL.md) |
+| 📊 Live Platform | [ai4trade.ai](https://ai4trade.ai) |
+| 📈 Trendshift | [trendshift.io/repositories/15607](https://trendshift.io/repositories/15607) |
+| 🐛 Issues | [github.com/HungYann/AlphaAgent/issues](https://github.com/HungYann/AlphaAgent/issues) |
+
+---
+
 ## License
 
-MIT License — free to use, modify, and distribute.
+This project is licensed under the **MIT License** — free to use, modify, and distribute.
+
+```
+MIT License
+
+Copyright (c) 2026 HungYann
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```
+
+See [LICENSE](./LICENSE) for the full text.
 
 ---
 
