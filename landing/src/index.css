@@ -10,20 +10,20 @@
   --color-accent: #7342E2;
   --color-login-bg: #F2F2EE;
 
-  /* Dark theme (default) */
-  --bg-primary: #070b10;
-  --bg-secondary: #0c1319;
-  --bg-tertiary: #121b22;
-  --bg-card: #0f171e;
-  --bg-hover: #152029;
+  /* Light theme */
+  --bg-primary: #f4efe4;
+  --bg-secondary: #ece3d1;
+  --bg-tertiary: #e2d6c0;
+  --bg-card: #f6f0e4;
+  --bg-hover: #e7dcc8;
 
-  --text-primary: #f2efe6;
-  --text-secondary: #a3afb8;
-  --text-muted: #73808b;
+  --text-primary: #181614;
+  --text-secondary: #5a5348;
+  --text-muted: #80776a;
 
-  --accent-primary: #d4a458;
-  --accent-secondary: #b8823d;
-  --border-primary: rgba(122, 140, 155, 0.16);
+  --accent-primary: #af7830;
+  --accent-secondary: #8f6026;
+  --border-primary: rgba(108, 87, 58, 0.16);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
